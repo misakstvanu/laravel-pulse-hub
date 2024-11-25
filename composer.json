@@ -1,0 +1,28 @@
+{
+    "name": "misakstvanu/laravel-pulse-hub",
+    "description": "A package for collecting data from multiple apps to a single database.",
+    "type": "library",
+    "version": "1.0.0",
+    "require": {
+        "php": "^8.2|^8.3",
+        "ext-pdo": "*",
+        "laravel/framework": "^11.0",
+        "laravel/pulse": "^1.2"
+    },
+    "require-dev": {
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Misakstvanu\\PulseHub\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Misakstvanu\\PulseHub\\PulseHubServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
